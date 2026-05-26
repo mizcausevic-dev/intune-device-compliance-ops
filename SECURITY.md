@@ -1,12 +1,19 @@
 # Security Policy
 
-`intune-device-compliance-ops` is a pure-transform library and CLI: it reads JSON device exports from Microsoft Graph (or synthetic data) and emits a structured findings report. No network listener, no remote fetch, no Graph token storage, no execution of user-supplied code.
+`intune-device-compliance-ops` includes an offline analyzer, CLI, and public synthetic operator dashboard for Microsoft Intune device-compliance posture. It does **not** store Graph tokens, perform live tenant fetches, or expose authenticated write paths.
 
-The input file contains device identifiers, UPNs, serial numbers, and OS versions — sensitive in your tenant. The report includes UPNs and serial numbers in finding rows; be deliberate about where you store the input and the output.
+The input file may contain device identifiers, UPNs, serial numbers, and endpoint posture details. Treat captured exports and generated reports as sensitive tenant material.
 
 ## Supported versions
 
 Only the latest tagged release is supported.
+
+## Operational posture
+
+- public Pages deployment uses **synthetic sample data only**
+- no tenant credentials or live Graph exports are committed
+- this repo is intended for operator-surface demonstration and offline analysis patterns
+- embedded or production tenant integrations require formal tenant review and secret-handling controls
 
 ## Reporting a vulnerability
 
