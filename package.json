@@ -1,0 +1,62 @@
+{
+  "name": "intune-device-compliance-ops",
+  "version": "0.1.0",
+  "description": "Operator surface for Microsoft Intune device compliance. Reads Microsoft Graph deviceManagement/managedDevices JSON exports and surfaces noncompliant / jailbroken / unencrypted / stale-check-in / outdated-OS / orphaned devices, with a BYOD-scope check. Library + CLI.",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "author": "mizcausevic-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizcausevic-dev/intune-device-compliance-ops"
+  },
+  "keywords": [
+    "azure",
+    "microsoft-365",
+    "intune",
+    "mdm",
+    "endpoint-compliance",
+    "device-compliance",
+    "platform-engineering",
+    "security-operations",
+    "byod",
+    "typescript"
+  ],
+  "bin": {
+    "intune-device-compliance": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "demo": "tsx src/cli.ts fixtures/devices-clean.json --now 2026-05-27T08:00:00Z --format summary",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8"
+  }
+}

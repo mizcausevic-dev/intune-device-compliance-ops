@@ -1,0 +1,29 @@
+{
+  "value": [
+    {
+      "id": "dev-c1",
+      "deviceName": "alice-laptop",
+      "userPrincipalName": "alice@example.com",
+      "operatingSystem": "Windows",
+      "osVersion": "10.0.22631.4317",
+      "complianceState": "compliant",
+      "jailBroken": "False",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-11-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-27T05:00:00Z",
+      "ownerType": "company"
+    },
+    {
+      "id": "dev-c2",
+      "deviceName": "bob-mbp",
+      "userPrincipalName": "bob@example.com",
+      "operatingSystem": "macOS",
+      "osVersion": "14.5",
+      "complianceState": "compliant",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-10-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-27T05:00:00Z",
+      "ownerType": "company"
+    }
+  ]
+}

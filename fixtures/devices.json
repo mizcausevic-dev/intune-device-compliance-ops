@@ -1,0 +1,66 @@
+{
+  "value": [
+    {
+      "id": "dev-1",
+      "deviceName": "alice-laptop",
+      "userPrincipalName": "alice@example.com",
+      "operatingSystem": "Windows",
+      "osVersion": "10.0.22631.4317",
+      "complianceState": "compliant",
+      "jailBroken": "False",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-11-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-26T20:00:00Z",
+      "ownerType": "company"
+    },
+    {
+      "id": "dev-2",
+      "deviceName": "bob-iphone",
+      "userPrincipalName": "bob@example.com",
+      "operatingSystem": "iOS",
+      "osVersion": "15.6",
+      "complianceState": "noncompliant",
+      "jailBroken": "False",
+      "isEncrypted": true,
+      "enrolledDateTime": "2024-04-10T10:00:00Z",
+      "lastSyncDateTime": "2026-05-20T12:00:00Z",
+      "ownerType": "company"
+    },
+    {
+      "id": "dev-3",
+      "deviceName": "carol-android",
+      "userPrincipalName": "carol@example.com",
+      "operatingSystem": "Android",
+      "osVersion": "14.0",
+      "complianceState": "compliant",
+      "jailBroken": "True",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-06-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-26T12:00:00Z",
+      "ownerType": "personal"
+    },
+    {
+      "id": "dev-4",
+      "deviceName": "dave-mbp",
+      "userPrincipalName": "dave@example.com",
+      "operatingSystem": "macOS",
+      "osVersion": "14.5",
+      "complianceState": "compliant",
+      "isEncrypted": false,
+      "enrolledDateTime": "2025-10-01T10:00:00Z",
+      "lastSyncDateTime": "2026-04-10T12:00:00Z",
+      "ownerType": "company"
+    },
+    {
+      "id": "dev-5",
+      "deviceName": "shared-kiosk",
+      "operatingSystem": "Windows",
+      "osVersion": "10.0.19045",
+      "complianceState": "inGracePeriod",
+      "isEncrypted": true,
+      "enrolledDateTime": "2025-08-01T10:00:00Z",
+      "lastSyncDateTime": "2026-05-26T01:00:00Z",
+      "ownerType": "company"
+    }
+  ]
+}
