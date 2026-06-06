@@ -10,14 +10,13 @@ name: OpenSSF Scorecard
 # Triggers:
 #   - branch_protection_rule (fires when branch protection config changes)
 #   - Weekly Saturday cron (keeps the score fresh as new checks ship)
-#   - Push to main (catches just-shipped regressions)
+#   - Manual dispatch for on-demand posture checks
 
 on:
   branch_protection_rule:
+  workflow_dispatch:
   schedule:
     - cron: "0 13 * * 6"
-  push:
-    branches: [main]
 
 permissions:
   contents: read
